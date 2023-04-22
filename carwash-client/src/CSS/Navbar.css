@@ -1,0 +1,312 @@
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Upper Navbar */
+.navbar .upperNavbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.navbar .upperNavbar .navLogo {
+    width: 30%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.navbar .upperNavbar .navBoxes {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar .upperNavbar .navBoxes .navBox {
+    display: flex;
+    align-items: center;
+    width: 15rem;
+    height: 4rem;
+}
+
+.navbar .upperNavbar .navBoxes .navBox .navBoxSpanIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.navbar .upperNavbar .navBoxes .navBox .navBoxSpan {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .upperNavbar .navBoxes .navBox .navBoxSpan h3 {
+    padding: 4px
+}
+
+/* Lower Navbar */
+.navbar .lowerNavbar {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .lowerNavbar ul {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .lowerNavbar ul li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 0 25px;
+}
+
+.navbar .lowerNavbar ul li .navRoutes {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .lowerNavbar ul li .active {
+    color: rgb(214, 160, 25);
+}
+
+.navbar .lowerNavbar ul li .navRoutes:hover {
+    top: -5px;
+    color: rgb(214, 160, 25);
+}
+
+.navbar .lowerNavbar .navButton {
+    width: 40%;
+}
+
+.navbar .lowerNavbar .navButton button {
+    width: 12rem;
+    height: 2.8rem;
+    margin-left: 10rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: white;
+    box-shadow: inset 0 0 0 0 #000000;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .lowerNavbar .navButton button:hover {
+    color: aliceblue;
+    box-shadow: inset 200px 0 0 0 rgb(214, 160, 25);
+}
+
+/* Sticky Navbar */
+.navbar .navSticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    z-index: 2;
+}
+
+/* For mobile View */
+.navMobileView {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.navDropdown {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.show {
+    height: 265px;
+}
+
+/* Book Service */
+.serviceForm {
+    position: absolute;
+    top: 7rem;
+    left: 33%;
+    right: 33%;
+    min-width: 15.6rem;
+    margin: 0 auto;
+    background-color: rgb(214, 160, 25);
+    box-shadow: 0 0 4px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 34%;
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.serviceFormHeight {
+    opacity: 1;
+    z-index: 3;
+    height: 32rem;
+}
+
+.serviceForm span {
+    width: 60%;
+    margin: 5px;
+}
+
+.serviceForm span p {
+    color: white;
+}
+
+.serviceForm span input {
+    width: 100%;
+    height: 2rem;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(214, 160, 25);
+    outline: none;
+    padding-left: 5px;
+}
+
+.serviceForm span input::placeholder {
+    color: white;
+}
+
+.serviceForm span select {
+    width: 100%;
+    height: 2rem;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(214, 160, 25);
+    outline: none;
+    cursor: pointer;
+}
+
+.date, .time {
+    cursor: pointer;
+}
+
+.serviceForm span select option {
+    background-color: white;
+    color: black;
+}
+
+.serviceForm div {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.serviceForm button {
+    margin-top: 10px;
+    width: 60%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: rgb(214, 160, 25);
+    background: white;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+.serviceForm button:hover {
+    color: white;
+    box-shadow: inset 400px 0 0 0 black;
+}
+
+@media only screen and (max-width: 950px) {
+    .navbar .upperNavbar .navBoxes {
+        display: none;
+    }
+
+    .navbar .lowerNavbar {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navbar .navSticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 70px;
+        z-index: 0;
+    }
+
+    .navbar .lowerNavbar ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .navbar .lowerNavbar ul li {
+        padding: 5px;
+        margin-left: 25px;
+    }
+
+    .navbar .lowerNavbar .navButton button {
+        margin: 15px 0 25px 25px;
+    }
+
+    .serviceForm {
+        left: 25%;
+        right: 25%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .serviceForm {
+        left: 10%;
+        right: 10%;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .serviceForm {
+        left: 0%;
+        right: 0%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,33 @@
+.home {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.home .imageCarousel {
+    width: 90vw;
+    height: 45rem;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .home .imageCarousel {
+        width: 100vw;
+        height: 40rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .home .imageCarousel {
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .home .imageCarousel {
+        height: 25rem;
+    }
+}

@@ -1,0 +1,51 @@
+.dashboard {
+    background-color: black;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.dashboard .boxes {
+    display: flex;
+    margin: 6rem 4.5rem;
+}
+
+.dashboard .boxes .MuiSvgIcon-root {
+    color: rgb(214, 160, 25);
+    font-size: 3rem;
+}
+
+.dashboard .boxes .boxItem {
+    color: white;
+}
+
+.dashboard .boxes .boxItem span {
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.dashboard .boxes .boxItem span span {
+    position: absolute;
+    top: -10px;
+    font-size: 2rem;
+    font-weight: 1000;
+    margin-left: 5px;
+}
+
+.dashboard .boxes .boxItem h3 {
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 950px) {
+    .dashboard .boxes {
+        margin: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .dashboard .boxes {
+        margin: 2.5rem 3rem;
+    }
+}

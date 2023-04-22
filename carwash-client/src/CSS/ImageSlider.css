@@ -1,0 +1,136 @@
+.imageSlider {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSlider .leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 45px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.imageSlider .rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.imageSlider .sliderTitle {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+    color: white;
+}
+
+.imageSlider .sliderTitle h5 {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.imageSlider .sliderHeading {
+    position: absolute;
+    top: 40%;
+    margin: auto;
+    font-size: 2.5rem;
+    color: rgb(214, 160, 25);
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.imageSlider .sliderHeading h2 {
+    width: 41rem;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imageSlider .sliderDesc {
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    color: white;
+}
+
+.imageSlider .sliderDesc p {
+    width: 29rem;
+    margin: 0 auto;
+}
+
+.imageSlider .images {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+    .imageSlider .sliderHeading {
+        font-size: 2rem;
+    }
+
+    .imageSlider .sliderHeading h2 {
+        width: 31rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .imageSlider .sliderTitle {
+        font-size: 1.5rem;
+    }
+
+    .imageSlider .sliderHeading {
+        font-size: 1.3rem;
+    }
+
+    .imageSlider .sliderHeading h2 {
+        width: 22rem;
+    }
+
+    .imageSlider .sliderDesc p {
+        width: 21rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .imageSlider .sliderTitle {
+        top: 30%;
+        font-size: 1rem;
+    }
+
+    .imageSlider .sliderTitle h5 {
+        width: 50px;
+    }
+
+    .imageSlider .sliderHeading {
+        top: 35%;
+        font-size: 0.9rem;
+    }
+
+    .imageSlider .sliderHeading h2 {
+        width: 15rem;
+    }
+
+    .imageSlider .sliderDesc {
+        top: 45%;
+    }
+
+    .imageSlider .sliderDesc p {
+        width: 60%;
+        font-size: 10px;
+    }
+}

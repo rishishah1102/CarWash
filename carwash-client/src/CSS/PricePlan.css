@@ -1,0 +1,104 @@
+.pricePlan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 18rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.pricePlan h3 {
+    position: relative;
+    top: 7px;
+    font-size: 1.5rem;
+}
+
+.pricePlan .price {
+    display: flex;
+    margin: 0 5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pricePlan .price .MuiSvgIcon-root {
+    font-size: 2rem;
+}
+
+.pricePlan .price h1 {
+    font-size: 3rem;
+}
+
+.pricePlan .price h5 {
+    font-size:  2rem;
+}
+
+.pricePlan .planItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricePlan .planItems span {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 5px 0;
+}
+
+.pricePlan .planItems span .MuiSvgIcon-root {
+    color: red;
+    font-size: 1.5rem;
+    margin: 0 5px;
+}
+
+.pricePlan .planItems span span {
+    color: rgb(66, 66, 66);
+    font-size: 1.1rem;
+}
+
+.pricePlan .btn {
+    margin: 25px 0;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: black;
+    box-shadow: inset 0 0 0 0 white;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.pricePlan .btn:hover {
+    box-shadow: inset 200px 0 0 0 rgb(214, 160, 25);
+}
+
+.selected {
+    box-shadow: 0 0 4px black;
+    color: rgb(214, 160, 25);
+    width: 22rem;
+}
+
+.selectedButton {
+    margin: 25px 0;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: inset 200px 0 0 0 rgb(214, 160, 25);
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.selectedButton:hover {
+    background: black;
+    box-shadow: inset 0 0 0 0 white;
+}

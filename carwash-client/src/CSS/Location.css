@@ -1,0 +1,177 @@
+.location {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+}
+
+.location .locationContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location .locationContainer h2 {
+    color: rgb(214, 160, 25);
+}
+
+.location .locationContainer hr {
+    width: 60px;
+    border-top: 4px solid rgb(214, 160, 25);
+}
+
+.location .locationContainer h1 {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.location .locationContainer .locationPoints {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.location .locationContainer .locationPoints .locationPoint {
+    display: flex;
+    width: 45%;
+}
+
+.location .locationContainer .locationPoints .locationPoint .MuiSvgIcon-root {
+    font-size: 2.5rem;
+    color: rgb(214, 160, 25);
+    margin: 0 5px;
+}
+
+.location .locationContainer .locationPoints .locationPoint .address {
+    margin: 0 5px;
+}
+.location .locationContainer .locationPoints .locationPoint .address h3 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+.location .locationContainer .locationPoints .locationPoint .address span {
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+.location .locationContainer .locationPoints .locationPoint .address p {
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+.location .feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location .feedback .feedbackForm {
+    width: 23rem;
+    height: 27rem;
+    background-color: rgb(214, 160, 25);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.location .feedback .feedbackForm h2 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.location .feedback .feedbackForm input {
+    width: 90%;
+    height: 2.5rem;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 2px solid white;
+    background-color: rgb(214, 160, 25);
+    color: white;
+    outline: none;
+}
+
+.location .feedback .feedbackForm textarea {
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 2px solid white;
+    background-color: rgb(214, 160, 25);
+    color: white;
+    outline: none;
+}
+
+.location .feedback .feedbackForm input::placeholder {
+    color: white;
+}
+
+.location .feedback .feedbackForm textarea::placeholder {
+    color: white;
+}
+
+.location .feedback .feedbackForm button {
+    margin-top: 10px;
+    width: 90%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: rgb(214, 160, 25);
+    background: white;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+.location .feedback .feedbackForm button:hover {
+    color: white;
+    box-shadow: inset 400px 0 0 0 black;
+}
+
+.blankLocSpace {
+    height: 3rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    .location .locationContainer {
+        width: 80%;
+        align-items: center;
+    }
+
+    .location .locationContainer h1 {
+        text-align: center;
+    }
+
+    .location .locationContainer .locationPoints {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .location .locationContainer .locationPoints .locationPoint {
+        width: 15rem;
+        margin: 5px 0;
+    }
+
+    .location .feedback {
+        width: 100%;
+    }
+    .location .feedback .feedbackForm {
+        width: 74%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .location .feedback .feedbackForm {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .location .locationContainer {
+        width: 100%;
+    }
+}

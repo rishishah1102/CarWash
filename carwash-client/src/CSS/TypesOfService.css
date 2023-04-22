@@ -1,0 +1,37 @@
+.typeOfService {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.typeOfService h2 {
+    color: rgb(214, 160, 25);
+}
+
+.typeOfService hr {
+    width: 60px;
+    border-top: 4px solid rgb(214, 160, 25);
+}
+
+.typeOfService h1 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.typeOfService .serviceItems {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 350px) {
+    .typeOfService h1 {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+}

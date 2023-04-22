@@ -1,0 +1,17 @@
+.topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    color: rgb(214, 160, 25);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topBtn .MuiSvgIcon-root {
+    font-size: 2rem;
+    text-align: center;
+}

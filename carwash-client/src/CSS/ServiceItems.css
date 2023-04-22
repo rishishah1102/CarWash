@@ -1,0 +1,20 @@
+.serviceItem {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 15px;
+    width: 20rem;
+}
+
+.serviceItem img {
+    width: 100px;
+    height: 100px;
+}
+
+.serviceItem h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.serviceItem p {
+    font-size: 1rem;
+}
